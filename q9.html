@@ -1,0 +1,72 @@
+<!-- Write HTML input tags snippet to show default values for all Form elements. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form>
+        <!-- Label: -->
+        <label for="fname">First name:</label>
+        <!-- Input: -->
+        <input type="text" id="fname" name="fname"><br>
+        <br>
+        <label for="cars">Choose a car:</label>
+        <!-- Select -->
+        <select id="cars" name="cars">
+            <!-- Option -->
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br>
+        <br>
+        <!-- Textarea -->
+        <textarea name="message" rows="10" cols="30">
+            The butterfly is beautiful.
+        </textarea>
+        <br>
+        <!-- Button -->
+        <button type="button" placeholder="Click Here">Click Me!</button>
+        <br>
+        <!-- Fieldset -->
+        <fieldset>
+            <!-- Legend -->
+            <legend>Personal Details:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="Jeni"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Jain"><br>
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+
+        <input list="browsers" name="browser">
+        <!-- Datalist -->
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <br>
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <!-- Output -->
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+        <p><strong>Note:</strong> The output element is not supported in Edge prior version 13.
+        </p>
+    </form>
+</body>
+
+</html>
